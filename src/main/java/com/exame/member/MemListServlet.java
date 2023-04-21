@@ -30,7 +30,7 @@ import javax.servlet.http.HttpServletResponse;
 //MemberListServlet 클래스를 변경하세요
 @WebServlet("/member/list.do")
 public class MemListServlet extends HttpServlet{
-	private MemberDao memberDao = new MemberDao();
+	private MemberDao memberDao = new MemberDaoBatis();
 	
 	
 	@Override

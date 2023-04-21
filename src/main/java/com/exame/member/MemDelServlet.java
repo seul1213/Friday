@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/member/del.do")
 public class MemDelServlet extends HttpServlet{
-	private MemberDao memberDao = new MemberDao();
+	private MemberDao memberDao = new MemberDaoJdbc();
 	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
